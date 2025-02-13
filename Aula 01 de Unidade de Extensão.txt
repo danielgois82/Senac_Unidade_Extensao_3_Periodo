@@ -1,0 +1,25 @@
+Aula 01 de Unidade de Extensão:
+
+Python FastAPI
+
+
+Criar o repositório do projeto;
+Criar a pasta do projeto;
+Criar o ambiente virtual (recomendado usar o cmd);
+Instalar o FastAPI: pip install "fastapi[standard]";
+
+Criar uma API simples, nome do arquivo "main.py":
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/')
+def root():
+    return {'Olá': 'Estou vivo!'}
+
+Por no ar a API com: fastapi dev main.py;
+
+No navegador, localhost:8000
+
+Para documentação, No navegador, localhost:8000/docs
